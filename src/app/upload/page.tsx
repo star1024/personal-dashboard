@@ -26,7 +26,10 @@ export default async function UploadPage() {
           className="w-full"
         />
 
-        <button className="w-full bg-black text-white p-2" type="submit">
+        <button
+          className="w-full bg-slate-900 text-white p-2 hover:bg-slate-800"
+          type="submit"
+        >
           Upload & Import
         </button>
       </form>

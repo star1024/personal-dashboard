@@ -24,7 +24,7 @@ export default function SignupPage() {
 
         <button
           type="submit"
-          className="w-full bg-black text-white p-2"
+          className="w-full bg-slate-900 text-white p-2 hover:bg-slate-800"
         >
           Create account
         </button>

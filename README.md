@@ -127,7 +127,6 @@
 - 雲端資料庫（Neon）
 - Vercel 部署
 - Production 環境變數
-- Dataset 列表頁
 - 基本錯誤處理 UI
 - Dataset 管理（刪除 / 更新）
 - README 架構圖與流程圖
@@ -138,7 +137,44 @@
 
 > 本專案使用 create-next-app 初始化
 
+### 開發前置需求
+
+在本機開發這個專案前，請先安裝以下工具：
+
+| 工具 | 必要 | 用途 | 建議版本 |
+| --- | --- | --- | --- |
+| `Node.js` | ✅ | 執行 Next.js / React / Prisma | `20.x` 以上 |
+| `pnpm` | ✅ | 安裝與管理專案套件 | `9.x` 或相容版本 |
+| `Git` | 建議 | 版本控制與同步 GitHub | 最新穩定版 |
+| `SQLite` | 不需要另外安裝 | 本專案本機開發使用 Prisma + SQLite 檔案資料庫 | - |
+
+> 備註：本專案的資料庫是透過 `DATABASE_URL=file:./dev.db` 直接使用 SQLite 檔案，因此本機通常不需要額外安裝 SQLite Server。
+
+### 安裝專案套件
+
+完成前置工具安裝後，在專案根目錄執行：
+
+```bash
+pnpm install
+```
+
+這個指令會安裝專案實際使用到的套件，例如：
+
+- `next`
+- `react`
+- `react-dom`
+- `prisma`
+- `@prisma/client`
+- `typescript`
+- `tailwindcss`
+- `bcryptjs`
+- `xlsx`
+- `recharts`
+
 ### 開發環境啟動
 
 ```bash
 pnpm dev
+```
+
+啟動後預設會在 `http://localhost:3000`。

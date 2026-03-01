@@ -71,7 +71,7 @@ export default async function DatasetPage({
 
       <div className="mt-8">
         <h2 className="font-semibold mb-2">Preview (first 5 rows)</h2>
-        <pre className="text-xs bg-black/30 p-3 rounded">
+        <pre className="text-xs bg-slate-900/40 p-3 rounded">
           {JSON.stringify(points.slice(0, 5), null, 2)}
         </pre>
       </div>
